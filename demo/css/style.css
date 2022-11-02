@@ -1,0 +1,21 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color:red
+}
+
+r {
+    color:darkred
+}
+
+#id-example {
+    color:orange
+}
+
+.container {
+    width: 30%;
+    margin:auto;
+    background-color: blue
+}

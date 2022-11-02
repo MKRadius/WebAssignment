@@ -1,11 +1,46 @@
-p {
-    color:red
+html {
+    font-family: 'Roboto', sans-serif;
 }
 
-r {
-    color:darkred
+.container {
+    width: 75%;
+    margin: auto;
 }
 
-#id-example {
-    color:orange
+header {
+    display: flex;
+}
+
+h1 {
+    width: 70%;
+}
+
+nav {
+    width: 30%;
+}
+
+h1 a {
+    color: lightgray;
+    background-color: slategrey;
+    width: 15rem;
+    line-height: 5rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+li a {
+    color: lightgray;
+    background-color: slategrey;
+    text-decoration: none;
+    width: 7rem;
+    line-height: 5rem;
+    display: block;
+    text-align: center;
 }
