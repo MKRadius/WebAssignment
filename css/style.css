@@ -1,7 +1,11 @@
 p {
-    color: red
+    color:red
 }
 
-a {
-    color: chartreuse
+r {
+    color:darkred
+}
+
+#id-example {
+    color:orange
 }
