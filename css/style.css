@@ -29,7 +29,7 @@ header {
 }
 
 nav {
-    width: 60%;
+    width: 70%;
 }
 
 
@@ -70,4 +70,16 @@ main {
     width: 100%;
     list-style-type: none;
     justify-content: space-evenly;
+}
+
+@media screen and (min-width: 800px) {
+    .logo {
+        display: block;
+        width: 37%;
+        margin-left: 3%;
+    }
+
+    nav {
+        width: 60%;
+    }
 }
