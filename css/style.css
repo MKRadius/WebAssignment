@@ -4,6 +4,8 @@ html {
 
 body {
     background-color: lightgrey;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .container {
@@ -13,7 +15,8 @@ body {
 header {
     display: flex;
     background-color: dimgray;
-    height: 150px;
+    height: 100px;
+    max-width: 100%;
 }
 
 .logo {
@@ -24,8 +27,8 @@ header {
 }
 
 .logo img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 nav {
@@ -46,9 +49,10 @@ li a {
     display: block;
     text-align: center;
     width: 100%;
-    line-height: 5rem;
+    max-width: 100%;
+    line-height: 3rem;
     margin-top: 7%;
-    font-size: 125%;
+    font-size: (100% * 1.25);
 }
 
 li {
@@ -64,6 +68,12 @@ main {
     background-color: antiquewhite;
     text-align: center;
     padding: 5%;
+    font-size: large;
+}
+
+main img {
+    display: flex;
+    max-width: 100%;
 }
 
 .products-container figure ul {
