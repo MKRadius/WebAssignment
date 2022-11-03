@@ -70,7 +70,7 @@ main {
     text-align: center;
     padding: 5%;
     margin-top: 5%;
-    font-size: large;
+    
 }
 
 main h1 {
@@ -105,24 +105,60 @@ main p {
     margin-top: 5%;
 }
 
-footer {
+.products-container section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+
+.products-container section figure img {
+    width: 100%;
+    height: auto;
+}
+
+.products-container section p {
+    text-align: justify;
+}
+
+.products-container article {
+    width: 30%;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: peachpuff;
     text-align: center;
-    margin-top: 25px;
+}
+
+.products-container article:hover {
+    background-color: sandybrown;
 }
 
 .contact-container {
     background-color: antiquewhite;
     display: flex;
-    text-align: left;
     padding: 5%;
     margin-top: 5%;
     max-width: 100%;
+}
+
+.contact-container article {
+    width: 30%;
+    margin-left: 10%;
+    padding: 1%;
+    text-align: left;
+    box-sizing: border-box;
 }
 
 .contact-container figure {
     display: block;
     float: right;
     margin-left: 5%;
+}
+
+.contact-container figure iframe {
+    width: 150%;
+    height: 100%;
+    border: 0;
 }
 
 .social-media-and-email {
@@ -150,9 +186,18 @@ footer {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 3%;
 }
 
 .social-media-and-email form input {
     display: block;
     width: 100%;
+    padding: 5%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 25px;
 }
