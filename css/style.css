@@ -2,22 +2,25 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: lightgrey;
+}
+
 .container {
     width: 100%;
-    
 }
 
 header {
-    height: 150px;
     display: flex;
     background-color: dimgray;
+    height: 150px;
 }
 
 .logo {
-    width: 37%;
-    margin-left: 3%;
     text-decoration: none;
     display: flex;
+    width: 37%;
+    margin-left: 3%;
 }
 
 .logo img {
@@ -40,18 +43,23 @@ li a {
     color: lightgray;
     background-color: dimgray;
     text-decoration: none;
-    width: 100%;
-    line-height: 5rem;
     display: block;
     text-align: center;
+    width: 100%;
+    line-height: 5rem;
     margin-top: 7%;
     font-size: 125%;
 }
 
 li {
-    width: calc(100% / 5)
+    width: calc(100% / 5);
 }
 
 li a:hover {
     background-color: gray;
+}
+
+
+main {
+    background-color: antiquewhite;
 }
