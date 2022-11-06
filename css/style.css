@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: lightgrey;
+    background-color: rgb(235, 237, 242);
     margin-top: 3%;
     margin-right: 7%;
     margin-left: 7%;
@@ -15,7 +15,7 @@ body {
 
 header {
     display: flex;
-    background-color: dimgray;
+    background-color: rgb(63, 58, 54);
     height: 100px;
     max-width: 100%;
 }
@@ -23,7 +23,7 @@ header {
 .logo {
     text-decoration: none;
     display: flex;
-    width: 37%;
+    margin-right: 37%;
     margin-left: 3%;
 }
 
@@ -32,20 +32,23 @@ header {
     height: 100px;
 }
 
-nav {
+.container nav {
     width: 60%;
 }
 
-
-nav ul {
+.container nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
 }
 
-li a {
-    color: lightgray;
-    background-color: dimgray;
+.container li {
+    width: calc(100% / 3);
+}
+
+.container li a {
+    color: rgb(235, 237, 242);
+    background-color: rgb(63, 58, 54);
     text-decoration: none;
     display: block;
     text-align: center;
@@ -56,17 +59,14 @@ li a {
     font-size: 100%;
 }
 
-li {
-    width: calc(100% / 5);
-}
-
-li a:hover {
-    background-color: gray;
+.container li a:hover {
+    background-color: rgb(191, 181, 179);
+    color: rgb(63, 58, 54);
 }
 
 
 main {
-    background-color: antiquewhite;
+    background-color: rgb(140, 131, 123);
     text-align: center;
     padding: 5%;
     margin-top: 5%;
@@ -76,6 +76,7 @@ main {
 main h1 {
     margin-top: 5%;
     margin-bottom: 5%;
+    color: rgb(63, 58, 54);
 }
 
 main img {
@@ -86,30 +87,16 @@ main img {
 main p {
     text-align: justify, center;
     max-width: 100%;
-}
-
-.products-container figure ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    list-style-type: none;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.bottom-container {
-    display: flex;
-    background-color: dimgray;
-    height: 100px;
-    max-width: 100%;
-    margin-top: 5%;
+    color: rgb(63, 58, 54);
 }
 
 .products-container section {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
-    background-color: antiquewhite;
+    background-color: rgb(140, 131, 123);
+    color: rgb(63, 58, 54);
 }
 
 .products-container section figure img {
@@ -125,20 +112,23 @@ main p {
     width: 30%;
     padding: 1%;
     box-sizing: border-box;
-    background-color: peachpuff;
+    border-style: solid;
+    border-color:  rgb(63, 58, 54);
+    background-color: rgb(191, 181, 179);
     text-align: center;
 }
 
 .products-container article:hover {
-    background-color: sandybrown;
+    background-color: rgb(235, 237, 242);
 }
 
 .contact-container {
-    background-color: antiquewhite;
+    background-color: rgb(191, 181, 179);
     display: flex;
     padding: 5%;
     margin-top: 5%;
     max-width: 100%;
+    color: rgb(63, 58, 54);
 }
 
 .contact-container article {
@@ -152,17 +142,17 @@ main p {
 .contact-container figure {
     display: block;
     float: right;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .contact-container figure iframe {
-    width: 150%;
+    width: 125%;
     height: 100%;
     border: 0;
 }
 
 .social-media-and-email {
-    background-color: antiquewhite;
+    background-color: rgb(191, 181, 179);
     text-align: center;
 }
 
@@ -174,13 +164,29 @@ main p {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    width: 70%;
-    margin: auto;
+    background-color: rgb(63, 58, 54);
+    text-decoration: none;
+    line-height: 4rem;
     padding: 0;
 }
 
+.social-media-and-email ul li {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.social-media-and-email ul li a {
+    text-decoration: none;
+    color: rgb(191, 181, 179);
+}
+
+.social-media-and-email ul li:hover {
+    background-color: rgb(114, 98, 87);
+}
+
 .social-media-and-email form {
-    background-color: sandybrown;
+    background-color: rgb(114, 98, 87);
     width: 30%;
     height: 50%;
     margin: auto;
@@ -196,8 +202,93 @@ main p {
     text-align: center;
 }
 
+.container li a {
+    color: rgb(235, 237, 242);
+    background-color: rgb(63, 58, 54);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    line-height: 3rem;
+    margin-top: 10px;
+    font-size: 100%;
+}
+
+.container li a:hover {
+    background-color: rgb(191, 181, 179);
+    color: rgb(63, 58, 54);
+}
+
+.bottom-container {
+    display: flex;
+    background-color: rgb(63, 58, 54);
+    height: 100px;
+    max-width: 100%;
+    margin-top: 5%;
+}
+
 footer {
     text-align: center;
     margin-left: 3%;
     margin-top: 25px;
+    color: rgb(235, 237, 242);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(235, 237, 242);
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        margin-right: auto;
+    }
+
+    .container nav {
+        margin-left: auto;
+    }
+
+    .container nav ul {
+        padding: 0;
+    }
+
+    .container li a {
+        letter-spacing: -2px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .contact-container article {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-container figure iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .products-container section figure img {
+        width: 50%;
+        height: auto;
+    }
+
+    .products-container section {
+        flex-direction: column;
+    }
+
+    .products-container article {
+        width: 100%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
 }
