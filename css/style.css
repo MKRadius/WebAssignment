@@ -90,7 +90,7 @@ main p {
     color: rgb(63, 58, 54);
 }
 
-.products-container section {
+.products-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -99,12 +99,12 @@ main p {
     color: rgb(63, 58, 54);
 }
 
-.products-container section figure img {
+.products-container figure img {
     width: 100%;
     height: auto;
 }
 
-.products-container section p {
+.products-container article p {
     text-align: justify;
 }
 
@@ -136,7 +136,6 @@ main p {
     margin-left: 10%;
     padding: 1%;
     text-align: left;
-    box-sizing: border-box;
 }
 
 .contact-container figure {
@@ -154,9 +153,10 @@ main p {
 .social-media-and-email {
     background-color: rgb(191, 181, 179);
     text-align: center;
+    margin-top: 0;
 }
 
-.social-media-and-email h1 {
+.social-media-and-email h3 {
     margin-top: 0%;
 }
 
@@ -277,12 +277,12 @@ footer a {
         height: 300px;
     }
 
-    .products-container section figure img {
+    .products-container figure img {
         width: 50%;
         height: auto;
     }
 
-    .products-container section {
+    .products-container {
         flex-direction: column;
     }
 
