@@ -147,6 +147,10 @@ main p {
     text-align: left;
 }
 
+.contact-container article p a {
+    text-decoration: none;
+}
+
 .contact-container figure {
     display: block;
     float: right;
@@ -171,27 +175,19 @@ main p {
 
 .social-media-and-email ul {
     display: flex;
+    margin: 0 20% 0 20%;
     list-style-type: none;
     justify-content: space-evenly;
-    background-color: rgb(63, 58, 54);
-    text-decoration: none;
-    line-height: 4rem;
     padding: 0;
 }
 
 .social-media-and-email ul li {
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
+    background-color: rgb(191, 181, 179);
 }
 
-.social-media-and-email ul li a {
-    text-decoration: none;
-    color: rgb(191, 181, 179);
-}
-
-.social-media-and-email ul li:hover {
-    background-color: rgb(114, 98, 87);
+.social-media-and-email ul li a img {
+    height: 50px;
+    width: 50px;
 }
 
 .social-media-and-email form {
@@ -209,21 +205,6 @@ main p {
     width: 100%;
     padding: 5%;
     text-align: center;
-}
-
-.social-media-and-email li a {
-    color: rgb(235, 237, 242);
-    background-color: rgb(63, 58, 54);
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-}
-
-.social-media-and-email li a:hover {
-    color: rgb(235, 237, 242);
-    background-color: rgb(114, 98, 87);
 }
 
 .bottom-container {
@@ -297,5 +278,9 @@ footer a {
         width: 100%;
         margin-bottom: 10%;
         text-align: center;
+    }
+
+    .social-media-and-email ul {
+        margin: 0 0 0 0;
     }
 }
