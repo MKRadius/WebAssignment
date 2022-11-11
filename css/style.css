@@ -187,7 +187,7 @@ main p {
 
 .social-media-and-email ul li a img {
     height: 50px;
-    width: 50px;
+    width: auto;
 }
 
 .social-media-and-email form {
