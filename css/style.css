@@ -248,11 +248,12 @@ footer a {
 
 @media (max-width: 1000px) {
     .logo {
+        margin-left: 2%;
         margin-right: auto;
     }
 
     .container nav {
-        margin-left: auto;
+        width: 90%;   
     }
 
     .container nav ul {
